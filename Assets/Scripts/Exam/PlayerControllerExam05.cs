@@ -7,11 +7,13 @@ public class PlayerControllerExam05 : MonoBehaviour
     public float xRange = 10;
     public GameObject projectilePrefab;
 
-
-    // Exam 05 ...
+    // Exam 05
     public int maxBulletCount = 10;
-    public float bulletRegenerateCooldown = 1f;
-    // ...
+    public float bulletRegenerateCooldown = 4f;
+
+    private int currentBulletCount;
+    private bool isReloading;
+    private float reloadTimer;
 
     private float horizontalInput;
     private InputAction moveAction;
@@ -23,7 +25,11 @@ public class PlayerControllerExam05 : MonoBehaviour
         shootAction = InputSystem.actions.FindAction("Shoot");
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        currentBulletCount = maxBulletCount;
+    }
+
     void Update()
     {
         horizontalInput = moveAction.ReadValue<Vector2>().x;
@@ -38,9 +44,38 @@ public class PlayerControllerExam05 : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
-        if (shootAction.triggered)
+        // Reload logic
+        if (isReloading)
         {
-            Instantiate(projectilePrefab, transform.position, transform.rotation);
+            reloadTimer += Time.deltaTime;
+
+            if (reloadTimer >= bulletRegenerateCooldown)
+            {
+                currentBulletCount = maxBulletCount;
+                isReloading = false;
+                reloadTimer = 0f;
+
+                Debug.Log("Bullet regenerated!");
+            }
+        }
+
+        // Shoot logic
+        if (shootAction.triggered && !isReloading)
+        {
+            if (currentBulletCount > 0)
+            {
+                Instantiate(projectilePrefab, transform.position, transform.rotation);
+                currentBulletCount--;
+
+                Debug.Log("Shoot! Bullets left: " + currentBulletCount);
+
+                if (currentBulletCount <= 0)
+                {
+                    isReloading = true;
+                    reloadTimer = 0f;
+                    Debug.Log("Out of bullets! Reloading...");
+                }
+            }
         }
     }
 }
