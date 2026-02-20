@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\1650703190_Pawaris\\bu-2025-sem2-gi244-week06-1650703190\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38B615B2-AD24-9C76-B37B-04B92A935DD6}|Assembly-CSharp.csproj|d:\\1650703190_pawaris\\bu-2025-sem2-gi244-week06-1650703190\\assets\\scripts\\exam\\playercontrollerexam05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38B615B2-AD24-9C76-B37B-04B92A935DD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exam\\playercontrollerexam05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38B615B2-AD24-9C76-B37B-04B92A935DD6}|Assembly-CSharp.csproj|d:\\1650703190_pawaris\\bu-2025-sem2-gi244-week06-1650703190\\assets\\scripts\\exam\\cameracontrolexam06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38B615B2-AD24-9C76-B37B-04B92A935DD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exam\\cameracontrolexam06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerControllerExam05.cs",
-              "DocumentMoniker": "D:\\1650703190_Pawaris\\bu-2025-sem2-gi244-week06-1650703190\\Assets\\Scripts\\Exam\\PlayerControllerExam05.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Exam\\PlayerControllerExam05.cs",
-              "ToolTip": "D:\\1650703190_Pawaris\\bu-2025-sem2-gi244-week06-1650703190\\Assets\\Scripts\\Exam\\PlayerControllerExam05.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Exam\\PlayerControllerExam05.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwFAAAAABAAAAAAAAAA==",
+              "Title": "CameraControlExam06.cs",
+              "DocumentMoniker": "D:\\1650703190_Pawaris\\bu-2025-sem2-gi244-week06-1650703190\\Assets\\Scripts\\Exam\\CameraControlExam06.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Exam\\CameraControlExam06.cs",
+              "ToolTip": "D:\\1650703190_Pawaris\\bu-2025-sem2-gi244-week06-1650703190\\Assets\\Scripts\\Exam\\CameraControlExam06.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Exam\\CameraControlExam06.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T09:37:53.943Z",
+              "WhenOpened": "2026-02-20T09:43:28.522Z",
               "EditorCaption": ""
             }
           ]

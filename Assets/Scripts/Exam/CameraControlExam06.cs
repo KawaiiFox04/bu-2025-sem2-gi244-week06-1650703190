@@ -14,16 +14,17 @@ public class CameraControlExam06 : MonoBehaviour
         Vector3 player2Pos = player2.transform.position;
 
         // Student code ...
-        // หาค่ากึ่งกลาง
-        float midX = (player1Pos.x + player2Pos.x) / 2f;
-        float midZ = (player1Pos.z + player2Pos.z) / 2f;
+        // หาจุดกึ่งกลางของผู้เล่นทั้งสอง
+        float midX = player1Pos.x;
+        float midZ = player2Pos.z;
 
-        transform.position = new Vector3(midX, transform.position.y, midZ + offset);
+        Vector3 newPosition = new Vector3(midX, transform.position.y, midZ + offset);
+        transform.position = newPosition;
 
-        // คำนวณระยะห่างจริง
-        float distance = Vector3.Distance(player1Pos, player2Pos);
+        // คำนวณระยะห่างเพื่อใช้ zoom
+        float distance = Mathf.Abs(player1Pos.x - player2Pos.z);
 
-        // ปรับ zoom
+        // ปรับขนาดกล้อง (zoom)
         targetCamera.orthographicSize = distance;
     }
 }
